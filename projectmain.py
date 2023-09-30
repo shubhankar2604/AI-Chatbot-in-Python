@@ -43,15 +43,15 @@ def get_response(intents_list,intents_json):
             break
     return result
 
-print("|============= Welcome to College Equiry Chatbot System! =============|")
-print("|=============== Ask your any query about our college ================|")
+print("|========== Welcome to the AI Chatbot System ==========|")
+print("|============ Ask any Query =============|")
 while True:
     message = input("| You: ")
     if message == "bye" or message == "Goodbye":
         ints = predict_class(message)
         res = get_response(ints, intents)
         print("| Bot:", res)
-        print("|===================== The Program Ends here! =====================|")
+        print("|================= The Program Ends here.. Goodbye :) =================|")
         exit()
 
     else:
